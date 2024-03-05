@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b1b3b8;
+}
+
+.calculator {
+    border: 3px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgb(207, 199, 199);
+    box-shadow: 30px 30px 45px rgbs(84, 84, 84, 0.1);
+
+
+}
+
+input {
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+
+    background-color: #717377;
+    color: #ffffff;
+    border-radius: 15px;
+
+}
+
+input::placeholder {
+    color: #ffffff;
+
+
+
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+
+    background-color: #717377;
+
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(27, 29, 32, 0.521);
+    cursor: pointer;
+}
+
+.equalBtn {
+    background-color: rgba(255, 166, 0, 0.938);
+    color: #dae7da;
+
+
+}
+
+.operator {
+    background-color: #717377;
+    color: #6dee0a;
+}
+
+
+
+
+/* Media Queries for Tablet Screens */
+@media only screen and (max-width: 1024px) {
+    .calculator {
+        width: 100%;
+    }
+
+    input {
+        width: 280px;
+        font-size: 36px;
+    }
+
+    button {
+        width: 55px;
+        height: 55px;
+        font-size: 18px;
+    }
+
+}
+
+/* Media Queries for Large Mobile Screens */
+@media only screen and (max-width: 767px) {
+    .calculator {
+        width: 100%;
+        height: 95%;
+        padding: 20px;
+    }
+
+    input {
+        width: 270px;
+        font-size: 30px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+/* Media Queries for Medium Mobile Screens */
+@media only screen and (max-width: 480px) {
+    .calculator {
+        width: 100%;
+    }
+
+    input {
+        width: 220px;
+        font-size: 24px;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+/* Media Queries for Small Mobile Screens */
+@media only screen and (max-width: 320px) {
+    .calculator {
+        width: 100%;
+    }
+
+    input {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    button {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
